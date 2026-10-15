@@ -2,6 +2,7 @@
 name = "car-rag"
 version = "0.1.0"
 description = "RAG chatbot over MG ZS car-manual warning messages (OpenRouter), with RAGAS evaluation."
+authors = [{ name = "Ziad Elkafoury" }]
 requires-python = ">=3.10"
 dependencies = [
     # Pinned to the langchain 0.3 generation: ragas 0.3.x is incompatible
