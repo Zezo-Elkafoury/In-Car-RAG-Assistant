@@ -1,0 +1,305 @@
+{
+  "label": "dense",
+  "timestamp": "2026-10-15T14:53:48.629624+00:00",
+  "retriever": "dense",
+  "rerank": false,
+  "answer_model": "openai/gpt-4o-mini",
+  "judge_model": "openai/gpt-4o-mini",
+  "rerank_model": null,
+  "n_samples": 36,
+  "aggregate": {
+    "nv_accuracy": 0.9444444444444444,
+    "faithfulness": 0.9874999999999999,
+    "llm_context_precision_with_reference": 0.9466820986972575
+  },
+  "per_sample": [
+    {
+      "user_input": "The Cruise Control Fault warning has appeared. What does this mean and what should I do?",
+      "reference": "It means the cruise control system has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Cruise Control Fault warning indicates that the cruise control system has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.8874999999778125
+    },
+    {
+      "user_input": "What should I do if the Active Speed Limiter Fault message shows?",
+      "reference": "It means the active speed limit system has detected a fault. Contact an MG Authorised Repairer as soon as possible.",
+      "response": "If the Active Speed Limiter Fault message shows, please contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 0.75,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.699999999965
+    },
+    {
+      "user_input": "The Engine Coolant Temperature High warning is on. What does it mean and what should I do?",
+      "reference": "High engine coolant temperature could result in severe engine damage. As soon as conditions permit, safely stop the vehicle, switch off the engine and contact an MG Authorised Repairer immediately.",
+      "response": "The Engine Coolant Temperature High warning indicates that the engine coolant temperature is too high, which could lead to severe damage. As soon as it is safe to do so, please stop the vehicle, switch off the engine, and contact an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.99999999995
+    },
+    {
+      "user_input": "What does the Engine Coolant Temperature Sensor Fault warning indicate?",
+      "reference": "It means the engine coolant temperature sensor has failed. As soon as conditions permit, safely stop the vehicle, switch off the engine and contact an MG Authorised Repairer immediately.",
+      "response": "The Engine Coolant Temperature Sensor Fault warning indicates that the engine coolant temperature sensor has failed. As soon as conditions permit, safely stop the vehicle and switch off the engine. Please contact an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "My dashboard shows Low Oil Pressure. What should I do?",
+      "reference": "It means the oil pressure is too low, which may result in severe engine damage. As soon as safety permits, stop the car, switch off the engine, check the engine oil level, and contact an MG Authorised Repairer as soon as possible.",
+      "response": "Low oil pressure indicates that the oil pressure is too low, which may result in severe engine damage. As soon as safety permits, stop the car, switch off the engine, and check the engine oil level. Please contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The Engine Fault warning light came on. What does it mean?",
+      "reference": "It means a failure has occurred that will affect engine performance and emissions. Contact an MG Authorised Repairer as soon as possible.",
+      "response": "The Engine Fault warning light indicates that a failure has occurred that will affect engine performance and emissions. Please contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9166666666361111
+    },
+    {
+      "user_input": "The Check Engine warning appeared. Is it serious and what should I do?",
+      "reference": "It means a failure has occurred that may severely damage the engine. As soon as conditions permit, safely stop the vehicle, switch off the engine and contact an MG Authorised Repairer immediately.",
+      "response": "The Check Engine warning indicates a failure that may severely damage the engine. As soon as conditions permit, safely stop the vehicle, switch off the engine, and contact an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.999999999975
+    },
+    {
+      "user_input": "What is the difference between the Engine Fault and Check Engine warnings?",
+      "reference": "Engine Fault means a failure affecting engine performance and emissions, and you should contact a repairer as soon as possible. Check Engine means a failure that may severely damage the engine, so you should safely stop the vehicle and switch off the engine immediately.",
+      "response": "The Engine Fault warning indicates a failure that will affect engine performance and emissions. The Check Engine warning means there is a failure that may severely damage the engine. Both require you to contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 0.5,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What does the Stop Start System Fault message mean?",
+      "reference": "It means the Stop/Start intelligent fuel saving system has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Stop Start System Fault message indicates that the Stop/Start intelligent fuel saving system has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The Clutch Switch Fault warning is displayed. What should I do?",
+      "reference": "It means the clutch switch has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Clutch Switch Fault indicates that the clutch switch has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.999999999975
+    },
+    {
+      "user_input": "The Gasoline Particular Filter Full warning has appeared. What does this mean and what should I do about it?",
+      "reference": "It means the gasoline particular filter is full. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Gasoline Particular Filter Full warning means that the filter is full and needs attention. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What does an Ignition System Fault warning mean?",
+      "reference": "It means the ignition system has detected a fault. Consult an MG Authorised Repairer immediately.",
+      "response": "An Ignition System Fault warning means that the ignition system has detected a fault. Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The Start Stop Button Fault message appeared. What should I do?",
+      "reference": "It means the Start Stop button has detected a fault. Consult an MG Authorised Repairer immediately.",
+      "response": "The Start Stop Button Fault message indicates that the Start Stop button has detected a fault. Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.94999999997625
+    },
+    {
+      "user_input": "What is a Passive Entry Fault?",
+      "reference": "It means the passive keyless entry (PKE) function has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "A Passive Entry Fault indicates that the passive keyless entry function has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The ABS Fault warning has appeared. What does it mean?",
+      "reference": "It means the anti-lock brake system (ABS) has failed and the ABS function is about to be disabled. Consult an MG Authorised Repairer immediately.",
+      "response": "The ABS Fault warning indicates that the anti-lock brake system has failed and the ABS function is about to be disabled. Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.99999999995
+    },
+    {
+      "user_input": "My car shows a Brake Fault warning. What is wrong and what should I check?",
+      "reference": "It means the brake fluid could be low or a fault has been detected in the Electronic Brake-force Distribution (EBD) system. As soon as safety permits, stop the car, switch off the engine, check the brake fluid level, and contact an MG Authorised Repairer as soon as possible.",
+      "response": "The Brake Fault warning indicates that the brake fluid may be low or there could be a fault in the Electronic Brake-force Distribution system. As soon as it is safe, please stop the car, switch off the engine, and check the brake fluid level. It is important to contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What should I do about a Stability Control Fault warning?",
+      "reference": "It means the stability control system has detected a fault. Consult an MG Authorised Repairer immediately.",
+      "response": "Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 0.5,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.94999999997625
+    },
+    {
+      "user_input": "The Traction Control Fault light is on. What does it indicate?",
+      "reference": "It means the traction control system has detected a fault. Consult an MG Authorised Repairer immediately.",
+      "response": "The Traction Control Fault light indicates that the traction control system has detected a fault. Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What does the EPB System Fault warning mean?",
+      "reference": "It means the electronic parking brake (EPB) system has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The EPB System Fault warning indicates that the electronic parking brake system has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.699999999965
+    },
+    {
+      "user_input": "The Park Brake Force Not Enough message is showing. What does it mean?",
+      "reference": "It means there is an issue with the electronic parking brake and it may not be able to provide adequate clamping force. Contact an MG Authorised Repairer as soon as possible.",
+      "response": "The Park Brake Force Not Enough message indicates that there is an issue with the electronic parking brake. It may not be able to provide adequate clamping force. Please contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.99999999995
+    },
+    {
+      "user_input": "What is an Autohold Fault and what should I do?",
+      "reference": "It means the Autohold System has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "An Autohold Fault indicates that the Autohold System has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.99999999998
+    },
+    {
+      "user_input": "The Hill Descent Control Fault warning came on. What should I do?",
+      "reference": "It means the hill descent control system has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Hill Descent Control Fault warning indicates that the hill descent control system has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.999999999975
+    },
+    {
+      "user_input": "The EPS Performance Reduced message appeared while driving. What does it mean and what should I do?",
+      "reference": "It means the electric power steering system has a general failure and steering performance is reduced. As soon as conditions permit, safely stop the vehicle and switch off the engine. After a short while, start the engine, drive a short distance and monitor the steering; if the message is still displayed or assistance is reduced, contact an MG Authorised Repairer immediately.",
+      "response": "The EPS Performance Reduced message indicates a general failure in the electric power steering system, resulting in reduced steering performance. As soon as it is safe, please stop the vehicle and switch off the engine. After a short while, restart the engine, drive a short distance, and monitor the steering. If the message remains or the steering assistance is still reduced, please contact an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What does the EPS Assistance Failure warning mean?",
+      "reference": "It means the electric power steering system has failed. Consult an MG Authorised Repairer immediately.",
+      "response": "The EPS Assistance Failure warning indicates that the electric power steering system has failed. Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What is the difference between EPS Performance Reduced and EPS Assistance Failure?",
+      "reference": "EPS Performance Reduced means a general steering failure with reduced performance: stop safely, restart after a while and monitor, contacting a repairer if it persists. EPS Assistance Failure means the steering has failed entirely, so consult a repairer immediately.",
+      "response": "EPS Performance Reduced indicates a general failure in the electric power steering system, resulting in reduced steering performance. You should safely stop the vehicle, switch off the engine, and then restart it to check if the issue persists. If the message remains, contact an MG Authorised Repairer.\n\nEPS Assistance Failure means that the electric power steering system has completely failed. In this case, you should consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What does a Steering Angle Fault warning indicate?",
+      "reference": "It means the steering angle sensor has failed. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "A Steering Angle Fault warning indicates that the steering angle sensor has failed. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The dashboard says Steering Angle Uncalibrated. What does that mean?",
+      "reference": "It means the steering angle sensor is not calibrated. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The message \"Steering Angle Uncalibrated\" means that the steering angle sensor is not calibrated. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What is the difference between Steering Angle Fault and Steering Angle Uncalibrated?",
+      "reference": "Steering Angle Fault means the steering angle sensor has failed, while Steering Angle Uncalibrated means the sensor is working but not calibrated. Both require consulting an MG Authorised Repairer as soon as possible.",
+      "response": "Steering Angle Fault indicates that the steering angle sensor has failed. Steering Angle Uncalibrated means that the sensor is not calibrated. In both cases, please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 0.75,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What should I do if I see an ESCL Fault warning?",
+      "reference": "It means a fault has been detected with the Electronic Steering Column Lock (ESCL). As soon as conditions permit, safely stop the vehicle, switch off the engine, and contact an MG Authorised Repairer as soon as possible.",
+      "response": "If you see an ESCL Fault warning, please safely stop the vehicle as soon as conditions permit and switch off the engine. Then, contact an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 0.75,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.7555555555303703
+    },
+    {
+      "user_input": "What does the Fuel Sensor Fault message mean?",
+      "reference": "It means the fuel sensor has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Fuel Sensor Fault message indicates that the fuel sensor has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.49999999995
+    },
+    {
+      "user_input": "The Airbag Fault warning is on. Is it urgent and what should I do?",
+      "reference": "It means the airbag system has detected a fault. As soon as conditions permit, safely stop the vehicle, switch off the engine and contact an MG Authorised Repairer immediately.",
+      "response": "The Airbag Fault warning indicates that the airbag system has detected a fault. It is important to address this issue promptly. As soon as conditions permit, safely stop the vehicle, switch off the engine, and contact an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 0.8,
+      "llm_context_precision_with_reference": 0.8874999999778125
+    },
+    {
+      "user_input": "What does it mean when the tyre sensor battery low warning appears?",
+      "reference": "It means the Tyre Pressure Monitoring system has detected that a tyre pressure sensor has a low battery. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The tyre sensor battery low warning indicates that a tyre pressure sensor has a low battery. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 0.75,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The TPMS Fault warning is displayed. What should I do?",
+      "reference": "It means the tyre pressure monitoring system has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The TPMS Fault warning indicates that the tyre pressure monitoring system has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.8333333332916666
+    },
+    {
+      "user_input": "What is the difference between a TPMS Fault and a tyre sensor battery low warning?",
+      "reference": "A tyre sensor battery low warning means a specific tyre pressure sensor has a low battery, while a TPMS Fault means the tyre pressure monitoring system itself has detected a fault. Both require consulting an MG Authorised Repairer as soon as possible.",
+      "response": "A TPMS Fault indicates that there is a problem with the tyre pressure monitoring system itself. In contrast, a tyre sensor battery low warning means that one of the tyre pressure sensors has a low battery and may need replacement. Both require you to consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 0.75,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "The 12V Battery Charging System Fault warning appeared. What does it mean?",
+      "reference": "It means the 12V battery charging system has failed. Consult an MG Authorised Repairer immediately.",
+      "response": "The 12V battery charging system fault indicates that the charging system has failed. Please consult an MG Authorised Repairer immediately.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    },
+    {
+      "user_input": "What does the Rear Drive Assist System Fault warning indicate?",
+      "reference": "It means the rear drive assist system (RDA) has detected a fault. Consult an MG Authorised Repairer as soon as possible.",
+      "response": "The Rear Drive Assist System Fault warning indicates that the rear drive assist system has detected a fault. Please consult an MG Authorised Repairer as soon as possible.",
+      "nv_accuracy": 1.0,
+      "faithfulness": 1.0,
+      "llm_context_precision_with_reference": 0.9999999999
+    }
+  ]
+}
