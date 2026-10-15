@@ -58,14 +58,18 @@ Three RAGAS metrics, all scored by an LLM judge (`EVAL_LLM_MODEL`):
 | Grounded in retrieved context (0-1) | `Faithfulness` |
 | Retrieval relevance (0-1) | `LLMContextPrecisionWithReference` |
 
-Dataset = 36 handcrafted golden pairs (`source: golden`), optionally extended with
-RAGAS synthetic pairs (`python evals/generate_dataset.py --size 20`, then append to
-a combined file).
+Dataset = 36 handcrafted golden pairs (`source: golden`) plus 19 RAGAS synthetic
+pairs (`evals/datasets/synthetic.jsonl`), merged into `evals/datasets/combined.jsonl`
+(55 rows total).
 
 ### Results (golden set, mini judge)
 
-| Metric | dense | hybrid |
-|---|---|---|
-| Output Accuracy | 0.944 | 0.946 |
-| Faithfulness | 0.987 | 1.000 |
-| Context Precision | 0.947 | 0.897 |
+| Metric | dense | hybrid | hybrid+rerank |
+|---|---|---|---|
+| Output Accuracy | 0.944 | 0.946 | 0.958 |
+| Faithfulness | 0.987 | 1.000 | 0.994 |
+| Context Precision | 0.947 | 0.897 | 0.986 |
+
+`hybrid+rerank` wins on Output Accuracy and Context Precision. Faithfulness is
+near-perfect everywhere, as expected on this simple corpus. Full per-sample
+reports: `evals/reports/`.
