@@ -69,14 +69,3 @@ a combined file).
 | Output Accuracy | 0.944 | 0.946 |
 | Faithfulness | 0.987 | 1.000 |
 | Context Precision | 0.947 | 0.897 |
-
-Notes:
-
-- Judge runs are serial (`max_workers=1`): free-tier OpenRouter keys reject
-  concurrent requests once the in-flight budget is exhausted (HTTP 402).
-- Judge calls cap `max_tokens` (512): OpenRouter blocks requests whose worst-case
-  `(prompt + max_tokens)` cost exceeds the remaining balance.
-- `EVAL_LLM_MODEL` defaults to `openai/gpt-4o`; it was run here with
-  `openai/gpt-4o-mini` because the account ran out of credits. Re-run with `gpt-4o`
-  (about $1-2 of credits for the full ablation) for publication-quality numbers,
-  plus the pending `hybrid+rerank` run and synthetic expansion.
