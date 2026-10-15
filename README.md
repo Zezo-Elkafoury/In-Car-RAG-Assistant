@@ -4,6 +4,13 @@ Retrieval-augmented chatbot over MG ZS warning-messages manual pages.
 Calls are routed through the **OpenRouter API**; retrieval quality is measured
 with **RAGAS**.
 
+## Start here
+
+The main project is the `car_rag` package + CLI — start with `car-rag ask`
+below. `notebook.ipynb` is a thin visual demo of the same code, and
+`evals/reports/` holds scored RAGAS runs (Output Accuracy, Faithfulness,
+Context Precision) comparing dense vs hybrid retrieval.
+
 ## Layout
 
 ```
