@@ -4,6 +4,7 @@ Usage:
     python evals/compare_reports.py evals/reports/<a>.json evals/reports/<b>.json
 """
 
+import glob
 import json
 import sys
 
@@ -15,8 +16,11 @@ LABELS = {
 
 
 def main() -> None:
+    paths: list[str] = []
+    for pattern in sys.argv[1:]:
+        paths.extend(sorted(glob.glob(pattern)) or [pattern])
     reports = []
-    for path in sys.argv[1:]:
+    for path in paths:
         with open(path, encoding="utf-8") as f:
             reports.append(json.load(f))
     if not reports:

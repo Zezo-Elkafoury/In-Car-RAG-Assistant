@@ -119,11 +119,18 @@ def run_evaluation(
             "user_input": s.user_input,
             "reference": s.reference,
             "response": s.response,
+            "source": rows[idx].get("source", "unknown"),
             **{col: float(df.loc[idx, col]) for col in REPORT_COLUMNS},
         }
         for idx, s in enumerate(samples)
     ]
     aggregate = {col: float(df[col].mean()) for col in REPORT_COLUMNS}
+    by_source: dict[str, dict[str, float]] = {}
+    for source in sorted({p["source"] for p in per_sample}):
+        subset = [p for p in per_sample if p["source"] == source]
+        by_source[source] = {
+            col: float(sum(p[col] for p in subset) / len(subset)) for col in REPORT_COLUMNS
+        }
     report = {
         "label": label,
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -136,6 +143,7 @@ def run_evaluation(
         "n_failed": len(failed),
         "failed": failed,
         "aggregate": aggregate,
+        "by_source": by_source,
         "per_sample": per_sample,
     }
 
