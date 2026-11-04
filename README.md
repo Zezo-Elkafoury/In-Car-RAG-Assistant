@@ -1,8 +1,11 @@
 # Car Manual RAG (MG ZS)
 
 Retrieval-augmented chatbot over MG ZS warning-messages manual pages.
-Calls are routed through the **OpenRouter API**; retrieval quality is measured
-with **RAGAS**.
+Calls are routed through the **OpenRouter API** or **Google Gemini**;
+retrieval quality is measured with **RAGAS**.
+
+Includes a **Streamlit web app** (`streamlit_app.py`) so you can chat with
+the assistant from a browser instead of the CLI.
 
 ## Start here
 
@@ -15,6 +18,7 @@ Context Precision) comparing dense vs hybrid retrieval.
 
 ```
 pyproject.toml            # uv-managed deps (pinned langchain 0.3 + ragas 0.3 stack)
+streamlit_app.py          # Streamlit web app: OpenRouter | Gemini chat UI
 src/car_rag/
   config.py               # pydantic-settings; everything comes from .env
   prompts.py              # versioned prompt template
@@ -38,7 +42,7 @@ uv sync
 Copy-Item .env.example .env   # then add your OPENROUTER_API_KEY
 ```
 
-## Usage
+## Usage — CLI
 
 ```powershell
 .venv\Scripts\python -m car_rag.cli ingest --rebuild
@@ -47,6 +51,22 @@ Copy-Item .env.example .env   # then add your OPENROUTER_API_KEY
 .venv\Scripts\python evals/run_evals.py --dataset evals/datasets/golden.jsonl --retriever dense --label dense
 .venv\Scripts\python evals/compare_reports.py evals/reports/<dense>.json evals/reports/<hybrid>.json
 ```
+
+## Usage — Streamlit web app
+
+```powershell
+.venv\Scripts\streamlit run streamlit_app.py
+```
+
+Then open `http://localhost:8501`.
+
+In the sidebar:
+1. Pick a provider (**OpenRouter** or **Google Gemini**).
+2. Enter your API key for that provider (entered in the UI; nothing is read from `.env`).
+3. Click **Ingest / Rebuild Index** to build the Chroma search index from the manual.
+4. Ask a question in the chat box. Answers are grounded in the MG ZS manual via RAG.
+
+Switching providers rebuilds the index with that provider's embeddings.
 
 ## Evaluation
 
