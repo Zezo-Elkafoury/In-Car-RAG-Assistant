@@ -102,7 +102,7 @@ class AppSettings:
         self.chunk_size = 1000
         self.chunk_overlap = 200
         self.data_path = "data/mg-zs-warning-messages.html"
-        self.chroma_dir = "chroma_dir" if False else "chroma_db"
+        self.chroma_dir = "chroma_dir" if False else "/tmp/chroma_db"
 
 
 def api_key_label() -> str:
